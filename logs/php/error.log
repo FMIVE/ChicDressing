@@ -1,0 +1,130 @@
+[26-Jan-2024 09:58:05 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: L’évènement planifié n’existe pas., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[26-Jan-2024 09:58:18 UTC] Cron reschedule event error for hook: woocommerce_geoip_updater, Error code: invalid_schedule, Error message: L’évènement planifié n’existe pas., Data: {"schedule":"fifteendays","args":[],"interval":1296000}
+[26-Jan-2024 09:58:20 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php:161
+Stack trace:
+#0 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php(161): implode(Array, '|')
+#1 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\core\base.php(820): WYSIJA_help_file->clear()
+#2 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(184): WYSIJA::croned_daily()
+#3 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\core\base.php(1525): WYSIJA_help_cron->run()
+#6 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-wp-hook.php(324): init_wysija_cron('')
+#7 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-settings.php(643): do_action('init')
+#10 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-config.php(103): require_once('C:\\Users\\fmive\\...')
+#11 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-load.php(50): require_once('C:\\Users\\fmive\\...')
+#12 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-cron.php(46): require_once('C:\\Users\\fmive\\...')
+#13 {main}
+  thrown in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php on line 161
+[26-Jan-2024 11:32:48 UTC] PHP Deprecated:  The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-requests.php on line 24
+[26-Jan-2024 12:38:58 UTC] PHP Warning:  Undefined array key "id_form" in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\views\front\widget_nl.php on line 125
+[26-Jan-2024 12:55:55 UTC] Erreur d’événement de replanification de tâche pour le crochet elementor_1_elementor_updater_cron. Code d’erreur : invalid_schedule. Message d’erreur : L’évènement planifié n’existe pas.. Données : {"schedule":"elementor_1_elementor_updater_cron_interval","args":[],"interval":300}
+[26-Jan-2024 13:10:50 UTC] PHP Warning:  Undefined array key "id_form" in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\views\front\widget_nl.php on line 125
+[27-Jan-2024 17:31:20 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php:161
+Stack trace:
+#0 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php(161): implode(Array, '|')
+#1 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\core\base.php(820): WYSIJA_help_file->clear()
+#2 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(184): WYSIJA::croned_daily()
+#3 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\core\base.php(1525): WYSIJA_help_cron->run()
+#6 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-wp-hook.php(324): init_wysija_cron('')
+#7 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-settings.php(643): do_action('init')
+#10 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-config.php(105): require_once('C:\\Users\\fmive\\...')
+#11 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-load.php(50): require_once('C:\\Users\\fmive\\...')
+#12 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-cron.php(46): require_once('C:\\Users\\fmive\\...')
+#13 {main}
+  thrown in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php on line 161
+[27-Jan-2024 22:14:54 UTC] PHP Warning:  Undefined array key "id_form" in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\views\front\widget_nl.php on line 125
+[27-Jan-2024 22:25:10 UTC] PHP Warning:  Undefined array key "id_form" in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\views\front\widget_nl.php on line 125
+[28-Jan-2024 17:35:39 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php:161
+Stack trace:
+#0 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php(161): implode(Array, '|')
+#1 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\core\base.php(820): WYSIJA_help_file->clear()
+#2 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(184): WYSIJA::croned_daily()
+#3 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\core\base.php(1525): WYSIJA_help_cron->run()
+#6 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-wp-hook.php(324): init_wysija_cron('')
+#7 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-settings.php(643): do_action('init')
+#10 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-config.php(105): require_once('C:\\Users\\fmive\\...')
+#11 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-load.php(50): require_once('C:\\Users\\fmive\\...')
+#12 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-cron.php(46): require_once('C:\\Users\\fmive\\...')
+#13 {main}
+  thrown in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php on line 161
+[29-Jan-2024 17:43:17 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php:161
+Stack trace:
+#0 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php(161): implode(Array, '|')
+#1 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\core\base.php(820): WYSIJA_help_file->clear()
+#2 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(184): WYSIJA::croned_daily()
+#3 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\core\base.php(1525): WYSIJA_help_cron->run()
+#6 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-wp-hook.php(324): init_wysija_cron('')
+#7 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-settings.php(643): do_action('init')
+#10 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-config.php(105): require_once('C:\\Users\\fmive\\...')
+#11 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-load.php(50): require_once('C:\\Users\\fmive\\...')
+#12 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-cron.php(46): require_once('C:\\Users\\fmive\\...')
+#13 {main}
+  thrown in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php on line 161
+[30-Jan-2024 20:12:28 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php:161
+Stack trace:
+#0 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php(161): implode(Array, '|')
+#1 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\core\base.php(820): WYSIJA_help_file->clear()
+#2 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(184): WYSIJA::croned_daily()
+#3 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\core\base.php(1525): WYSIJA_help_cron->run()
+#6 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-wp-hook.php(324): init_wysija_cron('')
+#7 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-settings.php(643): do_action('init')
+#10 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-config.php(105): require_once('C:\\Users\\fmive\\...')
+#11 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-load.php(50): require_once('C:\\Users\\fmive\\...')
+#12 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-cron.php(46): require_once('C:\\Users\\fmive\\...')
+#13 {main}
+  thrown in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php on line 161
+[01-Feb-2024 12:05:36 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php:161
+Stack trace:
+#0 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php(161): implode(Array, '|')
+#1 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\core\base.php(820): WYSIJA_help_file->clear()
+#2 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(184): WYSIJA::croned_daily()
+#3 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\core\base.php(1525): WYSIJA_help_cron->run()
+#6 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-wp-hook.php(324): init_wysija_cron('')
+#7 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-settings.php(643): do_action('init')
+#10 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-config.php(104): require_once('C:\\Users\\fmive\\...')
+#11 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-load.php(50): require_once('C:\\Users\\fmive\\...')
+#12 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-cron.php(46): require_once('C:\\Users\\fmive\\...')
+#13 {main}
+  thrown in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php on line 161
+[02-Feb-2024 14:24:37 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php:161
+Stack trace:
+#0 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php(161): implode(Array, '|')
+#1 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\core\base.php(820): WYSIJA_help_file->clear()
+#2 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(184): WYSIJA::croned_daily()
+#3 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\core\base.php(1525): WYSIJA_help_cron->run()
+#6 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-wp-hook.php(324): init_wysija_cron('')
+#7 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-settings.php(643): do_action('init')
+#10 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-config.php(104): require_once('C:\\Users\\fmive\\...')
+#11 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-load.php(50): require_once('C:\\Users\\fmive\\...')
+#12 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-cron.php(46): require_once('C:\\Users\\fmive\\...')
+#13 {main}
+  thrown in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-content\plugins\wysija-newsletters\helpers\file.php on line 161
+[02-Feb-2024 20:37:26 UTC] FTS vs test check 
+[02-Feb-2024 20:37:26 UTC] FTS did_upgrade
+[02-Feb-2024 20:37:26 UTC] FTS Upgrade complete
