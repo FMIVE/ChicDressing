@@ -108,7 +108,7 @@ body .header-logo a{
     font-weight: 800;
 }
 .logged-in-as a{
-    color: black;
+    color: black!important;
     font-weight: 800;
 }
 .post-author{ 
@@ -121,6 +121,10 @@ body .header-logo a{
     font-size: 16 !important;
     font-weight: 800;
 }
+.page-content .post-tags a{
+    color: #333333 !important;
+}
+
 
 /* @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap'); */
 /* font-family: 'Kalam', cursive; */

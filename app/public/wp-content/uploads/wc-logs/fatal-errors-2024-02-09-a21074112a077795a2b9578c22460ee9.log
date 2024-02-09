@@ -1,0 +1,14 @@
+2024-02-09T13:33:27+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "wpsupercache_uninstall" not found or invalid function name in C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-admin\includes\plugin.php(1269): do_action('uninstall_wp-su...')
+#3 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-admin\includes\plugin.php(960): uninstall_plugin('wp-super-cache/...')
+#4 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-admin\includes\ajax-actions.php(4748): delete_plugins(Array)
+#5 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-wp-hook.php(324): wp_ajax_delete_plugin('')
+#6 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-admin\admin-ajax.php(188): do_action('wp_ajax_delete-...')
+#9 {main}
+  thrown dans C:\Users\fmive\Local Beta Sites\chic-dressing\app\public\wp-includes\class-wp-hook.php à la ligne 324
+

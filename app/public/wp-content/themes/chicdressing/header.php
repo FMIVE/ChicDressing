@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<TItle>Chic Dressing vente achat de marques de luxe à prix cassés</TItle>
-<meta name="description" content="Pièces de créateurs et marques de luxe en achat vente à prix cassés">
+<meta name="description" content="Pièces de créateurs et marques de luxe en achat vente à prix cassés chez Chic Dressing">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="profile" href="https://gmpg.org/xfn/11">

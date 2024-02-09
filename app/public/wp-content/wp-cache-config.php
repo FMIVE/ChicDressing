@@ -5,18 +5,17 @@ WP-Cache Config Sample File
 See wp-cache.php for author details.
 */
 
-$dismiss_readable_warning = 1;
 $wp_cache_home_path = '/';
 $wp_cache_slash_check = 1;
-$cache_page_secret = 'dbbc4d212a295de9f9779b9819043028';
-$cache_time_interval = 600;
+$cache_page_secret = '04e584f565accfd6c4a90c8feb9e3e91';
+$cache_time_interval = '600';
 if ( ! defined('WPCACHEHOME') )
 	define( 'WPCACHEHOME', WP_CONTENT_DIR . "/plugins/wp-super-cache/" );
 
 $cache_compression = 1;
-$cache_enabled = false;
+$cache_enabled = true;
 $super_cache_enabled = true;
-$cache_max_time = 1800;
+$cache_max_time = 3600;
 //$use_flock = true; // Set it true or false if you know what to use
 $cache_path = 'C:\\Users\\fmive\\LocalBetaSites\\chic-dressing\\app\\public\\wp-content/cache/';
 $file_prefix = 'wp-cache-';
@@ -81,16 +80,16 @@ $wp_cache_hide_donation = 0;
 $wp_cache_not_logged_in = 2;
 $wp_cache_clear_on_post_edit = 0;
 $wp_cache_hello_world = 0;
-$wp_cache_mobile_enabled = 1;
+$wp_cache_mobile_enabled = 0;
 $wp_cache_cron_check = 1;
-$wp_cache_mfunc_enabled = 1;
+$wp_cache_mfunc_enabled = 0;
 $wp_cache_make_known_anon = 0;
 $wp_cache_refresh_single_only = 0;
 $wp_cache_mod_rewrite = 0;
 $wp_supercache_304 = 1;
 $wp_cache_front_page_checks = 1;
 $wp_cache_disable_utf8 = 0;
-$wp_cache_no_cache_for_get = 1;
+$wp_cache_no_cache_for_get = 0;
 $cache_scheduled_time = "00:00";
 $wp_cache_preload_interval = 600;
 $cache_schedule_type = 'interval';

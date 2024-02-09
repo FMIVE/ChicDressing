@@ -9,10 +9,10 @@
 	}
 	
 	// -------------------------------------------------------------------------
-	// j'ai basculé le H1 au-dessus de la liste car il était à l'intérieur
+	// j'ai basculé le H1 au-dessus de la liste car il était à l'intérieur puis changé en H2
 	// -------------------------------------------------------------------------
 // On ajoute un titre à la section blog
-	echo '<h1 id="leblog" class="chic-title">Marques de Luxe </h1>';
+	echo '<h2 id="leblog" class="chic-title">Marques de Luxe </h2>';
 	
 	// Blog Grid
 	echo '<ul class="blog-grid">';
@@ -149,7 +149,7 @@
 	endif; // have_posts()
 
 	echo '</ul>';
-	echo '<p class="text-center"><a class="chic-bouton" href="/blog">Voir tous les articles</a></p>';
+	echo '<p class="text-center"><a class="chic-bouton" href="/#blog">Voir tous les articles</a></p>';
 
 	?>
 

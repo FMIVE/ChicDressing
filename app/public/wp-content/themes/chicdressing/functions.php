@@ -7,18 +7,60 @@ function chicdressing_enqueue_styles() {
 
 add_filter( 'big_image_size_threshold', '__return_false' );
 ?>
-<!-- ------------------------------------------------------------------------ -->
-<!-- Ce code est lié à echo wp_get_attachment_image_src( $repeater_item->image_url, 'custom-size' )[0]; du fichier featured-slider-custom qui mettait en Full -->
+
+<!-- modif tailles d'images -->
 <?php
 add_image_size( 'custom-size', 1600, 900, true );
 ?>
 
-<!-- Ce code supprime les feuilles de style Google Fonts spécifiées du thème WordPress chaque fois que les scripts et les styles sont mis en file d’attente.
- Cela peut être utile pour améliorer les performances de chargement de la page ou pour des raisons de confidentialité. -->
-<?
-function remove_google_fonts_stylesheet() {  
-    wp_dequeue_style( 'ashe-opensans-font', 'ashe-playfair-font', 'ashe-kalam-font' );
-}
-add_action( 'wp_enqueue_scripts', 'remove_google_fonts_stylesheet', 999 );
 
- 
+<?
+
+function ashe_playfair_font_url() {
+    $font_url = '';
+    if ( 'off' !== _x( 'on', 'Google font: on or off', 'ashe' ) ) {
+        $font_url = add_query_arg( 'family', urlencode( 'Playfair Display:400,700' ), "//fonts.googleapis.com/css" );
+    }
+    return $font_url;
+}
+
+function ashe_opensans_font_url() {
+    $font_url = '';
+    if ( 'off' !== _x( 'on', 'Google font: on or off', 'ashe' ) ) {
+        $font_url = add_query_arg( 'family', urlencode( 'Open Sans:400italic,400,600italic,600,700italic,700' ), "//fonts.googleapis.com/css" );
+    }
+    return $font_url;
+}
+
+function ashe_kalam_font_url() {
+    $font_url = '';
+    if ( 'off' !== _x( 'on', 'Google font: on or off', 'ashe' ) ) {
+        $font_url = add_query_arg( 'family', urlencode( 'Kalam' ), "//fonts.googleapis.com/css" );
+    }
+    return $font_url;
+}
+
+function ashe_rokkitt_font_url() {
+    $font_url = '';
+    if ( 'off' !== _x( 'on', 'Google font: on or off', 'ashe' ) ) {
+        $font_url = add_query_arg( 'family', urlencode( 'Rokkitt' ), "//fonts.googleapis.com/css" );
+    }
+    return $font_url;
+}
+
+
+function ashe_gfonts_scripts() {
+    wp_enqueue_style( 'ashe-playfair-font', ashe_playfair_font_url(), array(), '1.0.0' );
+    wp_enqueue_style( 'ashe-opensans-font', ashe_opensans_font_url(), array(), '1.0.0' );
+
+    // Load Kalam if selected
+    if ( ashe_options( 'typography_logo_family' ) == 'Kalam' || ashe_options( 'typography_nav_family' ) == 'Kalam' ) {
+    	wp_enqueue_style( 'ashe-kalam-font', ashe_kalam_font_url(), array(), '1.0.0' );
+    }
+
+    // Load Rokkitt if selected
+    if ( ashe_options( 'typography_logo_family' ) == 'Rokkitt' || ashe_options( 'typography_nav_family' ) == 'Rokkitt' ) {
+    	wp_enqueue_style( 'ashe-rokkitt-font', ashe_rokkitt_font_url(), array(), '1.0.0' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'ashe_gfonts_scripts' );
