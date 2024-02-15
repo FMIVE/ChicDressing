@@ -5,6 +5,7 @@ WP-Cache Config Sample File
 See wp-cache.php for author details.
 */
 
+$dismiss_readable_warning = 1;
 $wp_cache_home_path = '/';
 $wp_cache_slash_check = 1;
 $cache_page_secret = '04e584f565accfd6c4a90c8feb9e3e91';

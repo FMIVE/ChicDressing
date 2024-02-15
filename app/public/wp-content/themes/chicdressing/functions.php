@@ -8,14 +8,9 @@ function chicdressing_enqueue_styles() {
 add_filter( 'big_image_size_threshold', '__return_false' );
 ?>
 
-<!-- modif tailles d'images -->
-<?php
-add_image_size( 'custom-size', 1600, 900, true );
-?>
 
-
+<!-- fonts google déchargées manuellement dans le thème enfant -->
 <?
-
 function ashe_playfair_font_url() {
     $font_url = '';
     if ( 'off' !== _x( 'on', 'Google font: on or off', 'ashe' ) ) {

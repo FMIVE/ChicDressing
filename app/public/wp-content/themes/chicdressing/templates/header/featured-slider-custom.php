@@ -64,10 +64,8 @@ $slider_data .= '}';
 	foreach( $slider_repeater as $repeater_item ) : ?>
 
 	<div class="slider-item">
-<!-- MODIF de FULL à 1600X900 ici avec custon size et add_image_size( 'custom-size', 1600, 900, true ); dans function.php-->
-		<!-- <div class="slider-item-bg" style="background-image:url( <?php echo wp_get_attachment_image_src( $repeater_item->image_url, 'full' )[0]; ?>);"></div> -->
-		<div class="slider-item-bg" style="background-image:url( <?php echo wp_get_attachment_image_src( $repeater_item->image_url, 'custom-size' )[0]; ?>);"></div>
-
+		<!-- modif de full à large -->
+		<div class="slider-item-bg" style="background-image:url( <?php echo wp_get_attachment_image_src( $repeater_item->image_url, 'large' )[0]; ?>);"></div>
 		<div class="cv-container image-overlay">
 			<div class="cv-outer">
 				<div class="cv-inner">

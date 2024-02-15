@@ -123,7 +123,19 @@ body .header-logo a{
 }
 .page-content .post-tags a{
     color: #333333 !important;
+
 }
+.plan-site{
+    display: flex;
+    justify-content: center;
+    color:black;
+    font-size: 14px;
+}
+ .sp-html-sitemap{
+    display: flex;
+    flex-direction: row;
+}
+
 
 
 /* @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap'); */
